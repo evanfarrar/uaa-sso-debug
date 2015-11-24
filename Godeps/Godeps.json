@@ -12,7 +12,7 @@
 		},
 		{
 			"ImportPath": "github.com/evanfarrar/uaa-sso-golang/uaa",
-			"Rev": "d055d8f825ee4a017186ac320a6e55374762abbf"
+			"Rev": "49c90c031b8f84c00e4439d2488d39796567ecb5"
 		},
 		{
 			"ImportPath": "github.com/gorilla/context",

@@ -18,8 +18,9 @@ func GetTokenKey(u UAA) (string, error) {
 	}
 
 	token, err := GetClientToken(u)
-	fmt.Println("======> Inside of get token key")
+	fmt.Println("======> Get client token")
 	if err != nil {
+		fmt.Println("======> Error with get client token")
 		fmt.Println(err.Error())
 		return "", err
 	}
@@ -28,7 +29,10 @@ func GetTokenKey(u UAA) (string, error) {
 
 	client := NewClient(host, u.VerifySSL).WithAuthorizationToken(token.Access)
 	code, body, err := client.MakeRequest("GET", uri.RequestURI(), nil)
+	fmt.Println("======> Get token key")
 	if err != nil {
+		fmt.Println("======> Error get token key")
+		fmt.Println(err.Error())
 		return "", err
 	}
 
