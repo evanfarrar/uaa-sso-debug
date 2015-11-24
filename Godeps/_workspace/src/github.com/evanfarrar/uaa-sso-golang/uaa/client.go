@@ -45,12 +45,10 @@ func GetClient(client Client) *http.Client {
 	mutex.Lock()
 	defer mutex.Unlock()
 
-	if _client == nil {
-		_client = &http.Client{
-			Transport: &http.Transport{
-				TLSClientConfig: client.TLSConfig(),
-			},
-		}
+	_client = &http.Client{
+		Transport: &http.Transport{
+			TLSClientConfig: client.TLSConfig(),
+		},
 	}
 
 	return _client
