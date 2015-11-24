@@ -1,1 +1,1 @@
-web: cf-autoscaling
+web: uaa-sso-debug

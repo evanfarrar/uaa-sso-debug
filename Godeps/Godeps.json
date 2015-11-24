@@ -1,11 +1,18 @@
 {
 	"ImportPath": "github.com/evanfarrar/uaa-sso-debug",
 	"GoVersion": "go1.5.1",
+	"Packages": [
+		"./..."
+	],
 	"Deps": [
 		{
 			"ImportPath": "github.com/dgrijalva/jwt-go",
 			"Comment": "v2.3.0-4-gc1da563",
 			"Rev": "c1da56349675b292d3200463e2c88b9aa5e02391"
+		},
+		{
+			"ImportPath": "github.com/evanfarrar/uaa-sso-golang/uaa",
+			"Rev": "d055d8f825ee4a017186ac320a6e55374762abbf"
 		},
 		{
 			"ImportPath": "github.com/gorilla/context",
@@ -14,14 +21,6 @@
 		{
 			"ImportPath": "github.com/gorilla/mux",
 			"Rev": "49c024275504f0341e5a9971eb7ba7fa3dc7af40"
-		},
-		{
-			"ImportPath": "github.com/evanfarrar/uaa-sso-golang/uaa",
-			"Rev": "091202140416578461d74042d959f3aeb3dc1d69"
-		},
-		{
-			"ImportPath": "github.com/pivotal-golang/conceal",
-			"Rev": "ee5ff0044a6e3c716ef5ec7c7edd82c9e129edd9"
 		},
 		{
 			"ImportPath": "github.com/ryanmoran/stack",

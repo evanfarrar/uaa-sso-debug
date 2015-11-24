@@ -1,5 +1,0 @@
-Your application {{.AppName}} has been automatically scaled down from {{.FromInstanceCount}} instances to {{.ToInstanceCount}},
-because the current average CPU usage of {{.CPUUtilization}}% is under your threshold of {{.CPUMinThreshold}}% during the last {{.PlanDuration}}.
-If load continues to decrease, we will automatically decrease the scale of your application
-(1 instance at a time) until your previously defined minimum of {{.MinInstanceCount}} instances. If load increases,
-we will scale your application up until your maximum of {{.MaxInstanceCount}} instances.
