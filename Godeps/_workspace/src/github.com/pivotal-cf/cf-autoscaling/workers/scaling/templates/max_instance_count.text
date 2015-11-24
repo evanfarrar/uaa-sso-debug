@@ -1,0 +1,2 @@
+Your application {{.AppName}} is over its CPU usage threshold because the current utilization of {{.CPUUtilization}}% is above {{.CPUMaxThreshold}}%, but
+because you are already at your max instance count of {{.MaxInstanceCount}}, your app was not scaled up.

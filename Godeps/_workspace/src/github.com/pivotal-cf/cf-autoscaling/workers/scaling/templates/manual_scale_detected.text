@@ -1,0 +1,4 @@
+Manual scaling has been detected for your application {{.AppName}}.
+The number of expected instances is {{.BindingExpectedInstanceCount}}. However, your application has {{.ReadingExpectedInstanceCount}} running instances.
+The autoscaling service has been disabled for your application.
+To re-enable the autoscaling service, visit your autoscaling dashboard.

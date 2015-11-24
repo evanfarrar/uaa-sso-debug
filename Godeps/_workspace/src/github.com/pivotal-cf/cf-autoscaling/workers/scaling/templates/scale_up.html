@@ -1,0 +1,11 @@
+<p>
+    Your application <b>{{.AppName}}</b> has been automatically <b>scaled up from {{.FromInstanceCount}} instances to {{.ToInstanceCount}}</b>,
+    because the current average CPU usage of {{.CPUUtilization}}% is over your
+    threshold of {{.CPUMaxThreshold}}% during the last {{.PlanDuration}}.
+</p>
+<p>
+    If load continues to increase, we will automatically increase the scale of your
+    application (1 instance at a time) until your previously defined maximum of
+    {{.MaxInstanceCount}} instances. If load decreases, we will scale your application
+    down until your minimum of {{.MinInstanceCount}} instances.
+</p>
